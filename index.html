@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Shah-Web Developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(71, 9, 128);
+            height: 90 px;
+
+        }
+
+        * {
+            margin: 20;
+            padding: 0;
+        }
+
+        .name {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(6, 6, 99);
+            font-size: 1.05rem;
+        }
+
+        .herosection {
+            display: flex;
+            justify-content: space-around;
+            margin-top: -80px;
+        }
+
+        .herosection img {
+            height: 700px;
+            width: 700px;
+            opacity: 90%;
+            margin-right: 100px;
+
+        }
+
+        .rightsection {
+            margin-top: 100px;
+        }
+
+        .herosection <div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin-top: 200px;
+            padding-left: 230px;
+            color: black;
+        }
+
+        .leftsection span {
+            color: rgb(155, 98, 209);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        main hr {
+            border: 0;
+            background: blueviolet;
+            height: 1.5px;
+            margin: 40px 80px;
+
+        }
+
+        .secondsection span {
+            font-size: 0.8rem;
+            color: gray;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            color: blueviolet;
+        }
+
+        .leftsection .Btn {
+            padding: 10px;
+            background-color: white;
+            border-color: blueviolet;
+        }
+
+        .leftsection .Btn:hover {
+            background-color: blueviolet;
+            border-radius: 10px;
+
+        }
+
+        .specialities {
+            margin: 50px 50px;
+        }
+
+        .specialities .first-three {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .specialities .first-three img {
+            height: 70px;
+            width: 70px;
+        }
+
+        .about h1 {
+            font-size: 2rem;
+            color: blueviolet;
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .about p {
+            font-size: 1.5rem;
+            margin: 80px;
+        }
+
+        .about span {
+            color: blueviolet;
+        }
+        .projects{
+            max-width: 80vw;
+            margin: auto;
+            color: blueviolet;
+        }
+        footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(71, 9, 128);
+            color: white;
+            height: 90 px;
+            padding: 60px 0;
+        }
+        footer .footertitle{
+            color: white;
+            font-size: 1.5rem;
+        }
+        footer ul {
+            display: grid;
+            justify-content: space-evenly;
+        }
+
+        footer ul li {
+            list-style: none;
+            margin: 9px 23px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        footer ul li a:hover {
+            font-size: 1.03rem;
+            color: white;
+        }
+        .copyright{
+            display: flex;
+            justify-content: center;
+        }
+        @media only screen and (max-width: 768px) {
+    .herosection {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .herosection img {
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+        margin-top: -200px;
+    }
+    .leftsection {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+/* Even smaller screens */
+@media only screen and (max-width: 480px) {
+    .name {
+        font-size: 1.2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .leftsection {
+        font-size: 1.5rem;
+    }
+    .specialities .first-three {
+        flex-direction: column;
+        align-items: center;
+    }
+    .specialities .first-three img {
+        margin-bottom: 20px;
+    }
+}
+    </style>
+</head>
+
+<body style="background-color: white;color: black;font-family: Poppins, sans-serif;">
+    <div class="header">
+        <div class="name"> Ibrahim's portfolio</div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="contactme.html">Contact me</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <section class="herosection">
+            <div class="leftsection">Hi, <div>my name is <span>Ibrahim</span></div>
+                And I am a <div></div> <span id="element"></span>
+                <div class="Buttons">
+                    <button class="Btn">Visit Github</button>
+                    <button class="Btn">Download CV</button>
+                </div>
+            </div>
+
+            </div>
+            <Div class="rightsection">
+                <img src="bgimage2.0.png">
+            </Div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>My Specialities</h1>
+        </section>
+        <div class="specialities">
+            <div class="first-three">
+                <div class="skills"><img src="python.png"></div>
+                <div class="skills"><img src="html.png"></div>
+                <div class="skills"><img src="CSS.png"></div>
+
+                <div class="skills"><img src="JS.png"></div>
+                <div class="skills"><img src="SQL.png"></div>
+                <div class="skills"><img src="Wordpress.png"></div>
+            </div>
+        </div>
+        <Hr>
+        <div class="about">
+            <h1>About me</h1>
+            <p>I'm a dedicated web developer with a passion for crafting user-friendly interfaces. Currently focused on
+                front-end development, I'm eager to expand my skills to become a full-stack developer. Proficient in
+                <span>HTML,
+                    CSS, and JavaScript,</span> Committed to continuous learning, I'm exploring back-end technologies
+                such as Node.js and MongoDB to enhance
+                my skill set. With a keen eye for detail and a problem-solving mindset, I strive to deliver high-quality
+                solutions that exceed client expectations. Let's build something great together!</p>
+        </div>
+        <hr>
+        <div class="projects"><h1>Projects</h1></div>
+    </main>
+    
+    <footer>
+        <div class="footertitle">
+            Ibrahim's Web developer portfolio
+        </div>
+        <div class="firstmenu"><ul>
+            <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="contactme.html">Contact me</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+        </ul></div>
+        <div class="firstmenu"><ul>
+            <li><a href="/">JS</a></li>
+            <li><a href="/">CSS</a></li>
+            <li><a href="/">SQL</a></li>
+            <li><a href="/">python</a></li>
+        </ul></div>
+        
+    </footer>
+    <div class="copyright">copyrights&#169; Reserved</div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Network Analyst', 'SEO Expert'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(71, 9, 128);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .blog-post p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .blog-post img {
+            display: block;
+            margin: 0 auto 15px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .load-more-btn,
+        .show-less-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .load-more-btn:hover,
+        .show-less-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .home-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .home-btn:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <button class="home-btn" onclick="goHome()">Home</button>
+        <h1>AI Blog</h1>
+
+        <div class="blog-post">
+            <h2>The Role of AI in Healthcare</h2>
+            <img src="healthcare.jpeg" alt="Healthcare AI" />
+            <p>Artificial Intelligence (AI) is revolutionizing the healthcare industry, from patient diagnosis to
+                personalized treatment plans. With AI-powered algorithms, healthcare professionals can analyze large
+                volumes of medical data to identify patterns and make accurate predictions.</p>
+            <p>AI also plays a crucial role in medical imaging, assisting radiologists in detecting abnormalities such
+                as tumors or fractures with higher accuracy and speed. Additionally, AI-driven chatbots and virtual
+                assistants help streamline patient care by providing round-the-clock support and answering common
+                medical queries.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2>The Future of AI in Education</h2>
+            <img src="education.jpeg" alt="Education AI" />
+            <p>As technology continues to evolve, AI is increasingly being integrated into educational systems to
+                enhance learning experiences and personalize instruction. AI-powered tools such as intelligent tutoring
+                systems and adaptive learning platforms can assess students' individual strengths and weaknesses,
+                providing tailored lessons and feedback.</p>
+            <p>Furthermore, AI can automate administrative tasks for educators, freeing up more time for teaching and
+                mentoring. With the potential to revolutionize traditional teaching methods, AI has the power to make
+                education more accessible and engaging for learners of all ages and backgrounds.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Ethical Considerations in AI Development</h2>
+            <img src="ethics.png" alt="Ethical AI" />
+            <p>While AI offers numerous benefits and advancements, it also raises important ethical considerations
+                regarding privacy, bias, and accountability. As AI algorithms rely on vast amounts of data, there is a
+                risk of perpetuating existing biases and discrimination present in the data.</p>
+            <p>Moreover, the increasing automation of tasks by AI systems raises concerns about job displacement and the
+                future of work. It is essential for developers, policymakers, and society as a whole to address these
+                ethical challenges and ensure that AI technologies are developed and deployed responsibly.</p>
+        </div>
+
+        <div class="blog-post hidden">
+            <h2>New AI Trends</h2>
+            <img src="trends.jpeg" alt="AI Trends" />
+            <p>Here are some emerging AI trends:</p>
+            <ul>
+                <li>AI-powered virtual assistants</li>
+                <li>Explainable AI for transparency</li>
+                <li>Federated learning for privacy</li>
+                <li>AI in cybersecurity</li>
+                <li>AI ethics and governance</li>
+            </ul>
+        </div>
+
+        <button class="load-more-btn" onclick="loadMore()">Load More Blogs</button>
+        <button class="show-less-btn hidden" onclick="showLess()">Show Less Blogs</button>
+    </div>
+
+    <script>
+        function loadMore() {
+            const hiddenPosts = document.querySelectorAll('.hidden');
+            hiddenPosts.forEach(post => post.classList.remove('hidden'));
+            document.querySelector('.load-more-btn').style.display = 'none';
+            document.querySelector('.show-less-btn').classList.remove('hidden');
+        }
+
+        function showLess() {
+            const hiddenPosts = document.querySelectorAll('.hidden');
+            hiddenPosts.forEach(post => post.classList.add('hidden'));
+            document.querySelector('.load-more-btn').style.display = 'block';
+            document.querySelector('.show-less-btn').classList.add('hidden');
+        }
+
+        function goHome() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>
